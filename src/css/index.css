@@ -1,0 +1,193 @@
+.landingImgSec {
+	display: inline-flex;
+    width: 34%;
+}
+
+.sec1 {
+	background-image: url('../img/stripe3.png');
+	margin-bottom: 0px !important;
+	border-radius: 0% !important;
+}
+
+.head1 { 
+    text-align: center;
+    font-weight: bold;
+    color: white !important;
+    font-size: 43px !important;
+}
+
+.container-full {
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+}
+
+.btn-landingPagePrimary {
+	    color: #E68F1B;
+    background: #FDE688;
+    border-radius: 0% !important;
+	font-family: Maiandra GD;
+	margin-top: 1%;
+}
+
+.hr1 {
+	display: inline-flex;
+    width: 47px;
+    margin: 0px 10px 0px 10px !IMPORTANT;
+    border: solid 0.5px #FDE688 !important;
+	color: #FDE688;
+	border-color :#FDE688;
+}
+/*------Section 2-----------*/
+.sec2 {
+	background-color:#EAEDD0;
+	padding-top:70px;
+}
+.hr2 {
+	display: inline-flex;
+    width: 100%;
+    margin: 0px 10px 0px 10px !IMPORTANT;
+    border: solid 1.5px #c1c97d !important;
+}
+
+.LPGreenBox {
+	border: #c1c97d solid 6px;
+    background-color: transparent;
+    padding: 1em;
+    text-align: center;
+    vertical-align: middle;
+    color: #c1c97d;
+    font-size: 20px;
+    height: 121px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	/*width:229px;*/
+	width: 116%;
+	min-width: 156px;
+	font-family: cursive;
+}
+
+.greenBoxDiv {
+	display:flex;
+	    padding: 2% 0%;
+    margin: 0% 5%;
+}
+.greenBoxDiv::before {
+  content: "";
+  border: #c1c97d solid 2.5px;
+  left: -21px;
+  position: relative;
+  width: 30%;
+  margin: 64px -12px;
+  border-color: #c1c97d;
+  color: #c1c97d;
+}
+
+.greenBoxDiv::after {
+  content: "";
+  border: #c1c97d solid 2.5px;
+  right: -21px;
+  position: relative;
+  width: 30%;
+  margin: 64px -12px;
+  border-color: #c1c97d;
+  color: #c1c97d;
+}
+
+.pd2 {
+	padding:3%;
+	
+}
+
+.dFlex {
+	display:flex;
+}
+.greenBoxText {
+	font-size: 19px;
+    color: #969692;
+    font-family: monospace;
+	text-align:center;
+}
+.whatIsWay {
+	    padding: 2% 16%;
+		text-align:center;
+}
+.whatIsWayHead {
+	color:#c1c97d;
+	font-weight: 800;
+}
+.whatIsWayText {
+	font-size: 19px;
+    color: #969692;
+    font-family: monospace;
+	padding: 2% 0%;
+}
+
+.sponsor {
+	padding: 9% 9% 1% 9%;
+    text-align: center;
+}
+
+/*------Section 3-----------*/
+
+.sec3 {
+    background-color: #c1c97e;
+}
+
+.sec3Head {
+	font-size:28px;
+	color:#fff;
+	text-align:center;
+	font-family: Maiandra GD;
+}
+.hr3 {
+	text-align: center;
+    width: 100px;
+    border: 2px solid #fff;
+    color: white;
+    background-color: white;
+    margin-top: 0px;
+	
+}
+.sec3Text {
+	text-align:center;
+	color: #fff;
+    font-size: 15px;
+	font-family: monospace;
+}
+
+.wd100 {
+	width:100%;
+}
+
+.copyright {
+	color:#fff;
+	padding-bottom: 6%;
+}
+/*---------Social Media icons-------*/
+.fa {
+    padding: 4%;
+    font-size: 21px !important;
+    width: 16%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 9px;
+    border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #e68f1a;
+  color: white;
+}
+
+.fa-twitter {
+  background: #e68f1a;
+  color: white;
+}
+
+.fa-google-plus-official {
+  background: white;
+  color: #e68f1a;
+}
