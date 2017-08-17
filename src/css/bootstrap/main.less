@@ -1,0 +1,421 @@
+@import "lib/bootstrap/bootstrap";
+@import "lib/bootstrap-social/bootstrap-social";
+@import "lib/font-awesome/font-awesome";
+@import "lib/ionicons/ionicons";
+@import "themes/modern";
+
+
+@media (min-width: @screen-sm-min) {
+.pull-right-sm {
+  float: right;
+}
+}
+@media (min-width: @screen-md-min) {
+.pull-right-md {
+  float: right;
+}
+}
+@media (min-width: @screen-lg-min) {
+.pull-right-lg {
+  float: right;
+}
+}
+
+// Scaffolding
+// -------------------------
+
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 75px;
+  background: #f5f5f5;
+  -webkit-font-smoothing: antialiased!important;
+  -moz-osx-font-smoothing: grayscale!important;
+}
+
+footer {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+}
+
+
+hr, .hr {
+  clear: both;
+  border-top: 3px solid #eee;
+}
+
+h2, .h2 {
+
+}
+
+h3, .h3 {
+  font-size: @text-size-l;
+
+  &__has-actions {
+    float: left;
+    margin-top: 7px;
+  }
+}
+
+p {
+  line-height: 1.3em;
+}
+
+.row__no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+
+.empty-space {
+  display: block;
+  clear: both;
+  width: 20px;
+  height: 20px;
+}
+
+.orange {
+  color: @orange;
+}
+
+.green {
+  color: @green;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page-header {
+  padding-bottom: 8px;
+  margin: 36px 0 18px;
+  border-bottom: none;
+}
+
+// Navbar
+// -------------------------
+
+.navbar-nav .navbar-img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+
+.navbar {
+
+  .navbar-cta {
+    background: @brand-secondary!important;
+    color: #fff!important;
+    transition: all .4s cubic-bezier(.24,.45,.46,.92);
+
+    &:hover {
+      background: @brand-secondary-dark!important;
+    }
+  }
+
+  .navbar-brand, .navbar-brand:hover {
+    font-family: @font-stylized;
+    color: #999;
+    font-size: 28px;
+    margin-right: 20px;
+  }
+}
+
+
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Font Icons
+// -------------------------
+
+.fa,
+[class^="ion-"] {
+  margin-right: 5px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+///* Carousel base class */
+//.carousel {
+//  height: 500px;
+//  margin-bottom: 60px;
+//}
+///* Since positioning the image, we need to help out the caption */
+//.carousel-caption {
+//  z-index: 10;
+//}
+
+///* Declare heights because of positioning of img element */
+//.carousel .item {
+//  height: 500px;
+//  background-color: #777;
+//}
+//.carousel-inner > .item > img {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  min-width: 100%;
+//  height: 500px;
+//}
+
+//Landing Page
+
+#landingPageColPics .fd-fade1{
+  height: 600px;
+  background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522020/left-mono_axj5sd.jpg);
+  background-repeat: no-repeat;
+}
+
+#landingPageColPics .fd-fade2{
+  height: 600px;
+  background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522022/mid-mono_xghtm7.jpg);
+  background-repeat: no-repeat;
+}
+
+#landingPageColPics .fd-fade3{
+  height: 600px;
+  background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453521991/right-mono_iqa2hm.jpg);
+  background-repeat: no-repeat;
+}
+
+
+
+#landingPageColPics2 .fd-fade2{
+  height: 600px;
+  background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522022/mid-mono_xghtm7.jpg);
+  background-repeat: no-repeat;
+}
+
+/*hide all the images, so background image shows*/
+img.fd-img1 {
+  display: none;
+}
+img.fd-img2 {
+  display: none;
+}
+img.fd-img3 {
+  display: none;
+}
+
+.LPGreenBox{
+  border:#c1c97d solid 2px;
+  background-color: transparent;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  color: #c1c97d;
+  font-size: 28px;
+  height: 106px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.LPWhiteUnderline{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom:#fff solid 5px;
+  background-color: transparent;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+
+  //text-decoration: underline;
+}
+
+#google_translate_element{
+  /* Firefox */
+  display:-moz-box;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+
+  /* Safari and Chrome */
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+
+  /* W3C */
+  display:box;
+  box-pack:center;
+  box-align:center;
+}
+
+// Hero
+// -------------------------
+.hero {
+  width: 130%;
+  margin-left: -15%;
+  padding: 13em 2em;
+  //margin-top: -50px;
+  background: #1d1d1d;
+  //background-image: url('/images/homepage/Home_Page_Caroussel_1.jpg');
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+
+
+  .hero-headline {
+    color: #fff;
+    margin-top: 60px; // offset hero offset from top
+    font-size: 50px;
+    font-family: @font-hero-headline;
+  }
+
+  .hero-strapline {
+    font-style: italic;
+    color: #fff;
+    font-size: 19px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    color: #fff;
+  }
+}
+
+// Activity Card
+// -------------------------
+.activity-card {
+  display: block;
+  width:100%;
+  min-height: 200px;
+  padding: 2em 3em;
+  
+  background-color: @gray;
+  background-image: url('http://placehold.it/1900x500');
+  background-size: cover!important;
+  background-position: top center!important;
+
+  text-align: left;
+
+  .activity-card--title {
+    transition: all .4s cubic-bezier(.24,.45,.46,.92);
+    font-family: @font-stylized;
+    color: #fff;
+  }
+
+  &:hover {
+
+    .activity-card--title {
+      color: @brand-primary;
+    }
+  }
+}
+
+// User V-card
+// -------------------------
+.vcard {
+
+  &--profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    display: block;
+    border-width: 0;
+    background: #555;
+    background-image: url(http://placehold.it/200x200);
+    background-size: cover;
+  }
+
+  &--name {
+    font-size: @text-size-m;
+  }
+
+}
+
+
+// Modal
+// -------------------------
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+
+  .modal-header {
+    border:0;
+    border-radius: 0;
+  }
+}
+
+
+
+
+// Footer
+// -------------------------
+.footer--copyright {
+  height: 46px;
+  line-height: 46px;
+}
+
+// Language Switcher
+// -------------------------
+#google_translate_element {
+  margin: 0 8px 0 0;
+}
+
+.goog-te-gadget-simple {
+  height: 30px;
+  line-height: 26px;
+}
+
+.goog-te-gadget-icon {
+  display: none;
+}
+
+.goog-te-banner-frame {
+  display: none;
+}
