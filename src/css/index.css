@@ -1,6 +1,33 @@
 /**
 Nidhi
 **/
+.backgroundImg{
+  background-image: url('../img/stripe3.png');
+}
+.list-group-horizontal .list-group-item {
+    display: inline-block;
+     border: 2px solid white !important;
+     padding: 10px 16px;
+     background-color: transparent !important;     
+      font-family: cursive;
+}
+.list-group-item.active {
+    background-color: white !important;
+    color: orange!important;
+}
+.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-left:-4px;
+	margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
 
 #landingPageColPics .fd-fade1:hover{
   height: 600px;
@@ -26,6 +53,13 @@ Nidhi
   background-repeat: no-repeat;
 }
 
+.textInMiddleDiv{
+   margin-right: 10%;
+    margin-left: 12%;
+}
+#optionsDiv{
+   margin-top: 2%;
+}
 /**end**/
 #landingPageColPics .fd-fade1{
   height: 600px;
