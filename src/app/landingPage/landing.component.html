@@ -28,22 +28,22 @@
 			<div id="optionsDiv" class="collapse row">
 				 <div class="text-center">
 						<label style="color:white" >Experience Type</label>
-            <div id="dropdownListOne" class="list-group list-group-horizontal">
-                <a class="list-group-item active">CEREMONY</a>
-                <a class="list-group-item">ART & CRAFT</a>
-                <a class="list-group-item">REGIONAL FOOD</a>
-                <a class="list-group-item">OTHERS</a>
+            <div id="experienceType" class="list-group list-group-horizontal">
+                <a class="list-group-item active experienceTypeOptions" (click)="setExperienceType($event)" id="ceremony">CEREMONY</a>
+                <a class="list-group-item experienceTypeOptions" (click)="setExperienceType($event)" id="artCraft">ART & CRAFT</a>
+                <a class="list-group-item experienceTypeOptions" (click)="setExperienceType($event)" id="regional">REGIONAL FOOD</a>
+                <a class="list-group-item experienceTypeOptions" (click)="setExperienceType($event)" id="others">OTHERS</a>
             </div>
 						<label style="color:white">Experience Location</label>
-						<div id="dropdownListTwo" class="list-group list-group-horizontal">
-                <a class="list-group-item active">AUSTRALIA</a>
-                <a class="list-group-item">CARRIBEAN</a>
-                <a class="list-group-item">SOUTH AFRICA</a>
+						<div id="experienceLocation" class="list-group list-group-horizontal">
+                <a class="list-group-item active experienceLocationOptions" id="australia" (click)="setExperienceLocation($event)">AUSTRALIA</a>
+                <a class="list-group-item experienceLocationOptions" id="carribean" (click)="setExperienceLocation($event)">CARRIBEAN</a>
+                <a class="list-group-item experienceLocationOptions"id="southAfrica" (click)="setExperienceLocation($event)">SOUTH AFRICA</a>
             </div>
 						<label style="color:white">Number of Guests</label>
 						<div id="dropdownListThree" class="list-group list-group-horizontal">
-                <select class="list-group-item ">
-									<option value="1">1</option>
+                <select class="list-group-item " [(ngModel)]="userRegistrationDetails.noOfGuest" name="noOfGuest">
+									<option value="1" selected>1</option>
 									<option value="2">2</option>
 									<option value="3">3</option>
 									<option value="4">4</option>
@@ -68,22 +68,22 @@
         <form>
 					<div style="display: flex;">
 					<div class="form-group" style="width: 50%;margin-right: 1%;">
-						<input type="text" class="form-control" id="firstName"  placeholder="First Name">
+						<input type="text" class="form-control" id="firstName"  placeholder="First Name" [(ngModel)]="userRegistrationDetails.firstName" name="firstName">
 					</div>
 					<div class="form-group" style="width: 50%;margin-left: 1%;">
-						<input type="test" class="form-control" id="lastName" placeholder="Last Name">
+						<input type="test" class="form-control" id="lastName" placeholder="Last Name" [(ngModel)]="userRegistrationDetails.lastName" name="lastName">
 					</div>
 					</div>
 						<div class="form-group">
-						<input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile Number">
+						<input type="tel" class="form-control" id="mobileNumber" placeholder="Mobile Number" [(ngModel)]="userRegistrationDetails.mobileNo" name="mobileNo">
 					</div>
 						<div class="form-group">
-						<input type="email" class="form-control" id="emailAddress" placeholder="Enter email">
+						<input type="email" class="form-control" id="emailAddress" placeholder="Enter email" [(ngModel)]="userRegistrationDetails.emailAddress" name="emailAddress">
 					</div>
 					</form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" (click)="register($event)">Register</button>
       </div>
     </div>
 
