@@ -1,6 +1,59 @@
 /**
 Nidhi
 **/
+@font-face {
+font-family: "Avenir-roman";
+src: url("fonts/customFonts/avenir-lt-std-55-roman-5987e1dd5f099.otf") format("opentype");
+}
+@font-face {
+font-family: "Avenir-light";
+src: url("fonts/customFonts/avenir-lt-std-35-light-5987e1dec88dc.otf") format("opentype");
+}
+@font-face {
+font-family: "Avenir-black";
+src: url("fonts/customFonts/avenir-lt-std-95-black-5987e2391772d.otf") format("opentype");
+}
+@font-face {
+font-family: "Neucha";
+src: url("fonts/customFonts/neucha.otf") format("opentype");
+}
+.neuchaFont{
+font-family: 'Neucha';
+}
+.avenirFont{
+  font-family: 'Avenir-black';
+}
+.confirmationModalThankYou{
+font-style:normal;
+font-weight: 400;
+font-size: xx-large;
+}
+.confirmationMsg{
+font-style:normal;
+font-weight: 300 !important;
+font-size: medium !important;
+}
+.confirmationContinueBtn{
+color: #e68f1a;
+background: #fde688;
+}
+.confirmationContinueBtn:hover{
+color: #e68f1a;
+}
+.closeConfirmationModal:hover{
+  content:url('../img/x-buitton.png');
+}
+.confirmationModalDesign{
+      background: #f4f4f4 !important;
+    border: #d0d0d0 2px solid !important;
+}
+.downButtonHover:hover{
+  content:url('../img/down-button-hover.png');
+}
+    
+.modalDimensions{
+      width: 31%;
+}
 .backgroundImg{
   background-image: url('../img/stripe3.png');
 }
@@ -52,7 +105,26 @@ Nidhi
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522018/mid-color_qzs0bx.jpg);
   background-repeat: no-repeat;
 }
+#image{
+   position: absolute;
+  left: 0;
+  top: 0;
+}
+.wayFairerLogo{
+    z-index: 100;
+    position: absolute;
+    left: 14%;
+    top: 2%;
 
+}
+#text {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  left: 7%;
+    top: 69%;
+}
 .textInMiddleDiv{
    margin-right: 10%;
     margin-left: 12%;
@@ -102,7 +174,8 @@ img.fd-img3 {
 
 
 .sec1 {
-	background-image: url('../img/stripe3.png');
+/*	background-image: url('../img/stripe3.png');*/
+background: #e68f1a !important;
 	margin-bottom: 0px !important;
 	border-radius: 0% !important;
 }
@@ -119,6 +192,11 @@ img.fd-img3 {
   padding: 0px !important;
   width: 100% !important;
 }
+.btn-landingPagePrimary:hover{
+  background: white;
+   color: #E68F1B !important;
+}
+
 
 .btn-landingPagePrimary {
 	    color: #E68F1B;
@@ -136,9 +214,10 @@ img.fd-img3 {
 	color: #FDE688;
 	border-color :#FDE688;
 }
+
 /*------Section 2-----------*/
 .sec2 {
-	background-color:#EAEDD0;
+	background-color:#fcfbf2;
 	padding-top:70px;
 }
 .hr2 {
@@ -181,6 +260,7 @@ img.fd-img3 {
   margin: 64px -12px;
   border-color: #c1c97d;
   color: #c1c97d;
+      background-color: #c1c97d;
 }
 
 .greenBoxDiv::after {
@@ -192,6 +272,7 @@ img.fd-img3 {
   margin: 64px -12px;
   border-color: #c1c97d;
   color: #c1c97d;
+      background-color: #c1c97d;
 }
 
 .pd2 {
@@ -204,9 +285,10 @@ img.fd-img3 {
 }
 .greenBoxText {
 	font-size: 19px;
-    color: #969692;
-    font-family: monospace;
+    color: #7f7f7f;
 	text-align:center;
+  padding: 2% 0%;
+    margin: 0% 5%;
 }
 .whatIsWay {
 	    padding: 2% 16%;

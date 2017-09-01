@@ -10,7 +10,7 @@ declare var bootbox:any;
   //styleUrls: ['./app.component.css']
 })
 export class LandingPageComponent {
-  test: string;
+  showForm=false;;
   userRegistrationDetails= new UserRegistrationDetails();
     constructor(private _wayfairerService: WayFairerServices) {
 
@@ -19,20 +19,18 @@ export class LandingPageComponent {
     ngOnInit() {
        
     }
+    public confirmationModalClose(){
+      $('#registrationConfirmationModal').modal('toggle');
+      window.location.reload();
+    }
+
     public register($event:any){
       console.log(this.userRegistrationDetails);
 
       this._wayfairerService.consumePostWebService("registration",this.userRegistrationDetails).subscribe(
          data => {
           $('#userDetailsModal').modal('toggle');
-           
-           bootbox.alert({ 
-              size: "medium",
-              message: data.responseMessage, 
-              callback: function(){
-                 window.location.reload();
-              }
-            });     
+           $('#registrationConfirmationModal').modal('toggle');
          return true;
        },
        error => {
@@ -52,4 +50,5 @@ export class LandingPageComponent {
       $('.experienceTypeOptions').removeClass('active');
       $('#' +selected.id).addClass('active');
     }
+   
 }
