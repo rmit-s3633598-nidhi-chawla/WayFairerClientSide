@@ -1,6 +1,12 @@
 /**
 Nidhi
 **/
+.row{
+  margin-right:0px !important;
+}
+.removePadding{
+  padding-right:0px !important;
+}
 @font-face {
 font-family: "Avenir-roman";
 src: url("fonts/customFonts/avenir-lt-std-55-roman-5987e1dd5f099.otf") format("opentype");
@@ -83,25 +89,25 @@ color: #e68f1a;
 }
 
 #landingPageColPics .fd-fade1:hover{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522014/left-color_nfk489.jpg);
   background-repeat: no-repeat;
 }
 
 #landingPageColPics .fd-fade2:hover{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522018/mid-color_qzs0bx.jpg);
   background-repeat: no-repeat;
 }
 
 #landingPageColPics .fd-fade3:hover{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522016/right-color_ael1bh.jpg);
   background-repeat: no-repeat;
 }
 
 #landingPageColPics2 .fd-fade2:hover{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522018/mid-color_qzs0bx.jpg);
   background-repeat: no-repeat;
 }
@@ -122,8 +128,21 @@ color: #e68f1a;
   position: absolute;
   color: white;
   font-size: 20px;
-  left: 7%;
+  
     top: 69%;
+}
+.textInMiddleDiv{
+   margin-right: 10%;
+    margin-left: 12%;
+}
+
+#textSmall {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  
+    top: 30%;
 }
 .textInMiddleDiv{
    margin-right: 10%;
@@ -134,19 +153,19 @@ color: #e68f1a;
 }
 /**end**/
 #landingPageColPics .fd-fade1{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522020/left-mono_axj5sd.jpg);
   background-repeat: no-repeat;
 }
 
 #landingPageColPics .fd-fade2{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522022/mid-mono_xghtm7.jpg);
   background-repeat: no-repeat;
 }
 
 #landingPageColPics .fd-fade3{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453521991/right-mono_iqa2hm.jpg);
   background-repeat: no-repeat;
 }
@@ -154,7 +173,7 @@ color: #e68f1a;
 
 
 #landingPageColPics2 .fd-fade2{
-  height: 525px;
+  height: 440px;
   background-image: url(http://res.cloudinary.com/helvuqbi9/image/upload/c_fill,h_600,q_44/v1453522022/mid-mono_xghtm7.jpg);
   background-repeat: no-repeat;
 }
