@@ -21,15 +21,15 @@ export class WayFairerServices {
      constructor(private http: Http) {
  
  };
-    consumeGetWebService(endpoint:string) {
+    consumeGetWebService(endpoint:string): Observable<any> {
        console.log("End point:"+endpoint);
        console.log("Complete URL"+ this.url+endpoint);
        this.url = this.url+endpoint;
-        this.http.get(this.url).subscribe(value =>{
-            console.log(value)
-           
-        });
-         return 'a!';
+       let returnData = this.http.get(endpoint).map((res:Response)=>res.json());;
+       /*return this.http.get(this.url).map(this.extractData)
+      .catch(this.handleError);*/
+      return returnData;
+        // return 'a!';
     }
     consumePostWebService(endpoint:string,data:any): Observable<any>{
         let headers = new Headers();
